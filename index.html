@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Sign Up | Station70</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Station70</a>
+        </div>
+    </nav>
+    <br>
+    <div class="container col-4">
+        <h1>Register</h1>
+        <form action="/" method="post" id="signUpForm">
+            <div class="form-group">
+                <label for="name" class="form-label mt-4">Name<span class="text-warning">*</span></label>
+                <input type="text" name="name" id="name" placeholder="Enter name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="companyName" class="form-label mt-4">Company Name<span class="text-warning">*</span></label>
+                <input type="text" name="companyName" id="companyName" placeholder="Enter company name"
+                    class="form-control" required>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label for="workEmail" class="form-label mt-4">Work Email<span class="text-warning">*
+                                    </span>
+                                </label>
+                                <input type="email" name="workEmail" id="workEmail" placeholder="Enter your work email"
+                                    class="form-control" required>
+                            </div>
+                        </td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                            <div class="form-group">
+                                <label for="phoneNumber" class="form-label mt-4">Phone Number</label>
+                                <input type="text" name="workEmail" id="workEmail"
+                                    placeholder="Enter your work phone number" class="form-control">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <label for="address" class="form-label mb-4">Address<span class="text-warning">*</span></label>
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a href="#us" class="nav-link active" data-bs-toggle="tab" aria-selected="true" role="tab">US</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" data-bs-toggle="tab" href="#international" aria-selected="false" role="tab"
+                        tabindex="-1">International</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade active show" id="us" role="tabpanel">
+                    <div class="form-group">
+                        <label for="address" class="form-label mt-4">Address</label>
+                        <input type="text" name="address" id="address" placeholder="Enter your work address"
+                            class="form-control">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="international" role="tabpanel">
+                    <div class="form-group">
+                        <label for="country" class="form-label mt-4">Country</label>
+                        <input type="text" name="country" id="country" placeholder="Enter your work country"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="address" class="form-label mt-4">Address</label>
+                        <input type="text" name="address" id="address" placeholder="Enter your work address"
+                            class="form-control">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="terms">
+                <label class="form-check-label" for="flexCheckDefault">
+                    I hereby accept the <a>Station70 Customer Agreement</a> on behalf of my organization and confirm
+                    that I have the authority to do
+                    so. For more information about Station70's privacy practices, see the <a>Station70 Privacy
+                        Statement</a>.
+                </label>
+            </div>
+            <br>
+            <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="6Lemc7UoAAAAAGFUc94XPQksffqZkJoVyCoZncwY"
+                    data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                <input class="form-control d-none" data-recaptcha="true" required
+                    data-error="Please complete the Captcha">
+                <div class="help-block with-errors"></div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
